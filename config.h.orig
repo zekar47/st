@@ -12,8 +12,8 @@ static int borderpx = 2;
  * doesn't perfectly match the size of the window. The values are percentages.
  * 50 means center, 0 means flush left/top, 100 means flush right/bottom.
  */
-static int anysize_halign = 50;
-static int anysize_valign = 50;
+static int anysize_halign = 0;
+static int anysize_valign = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -213,6 +213,8 @@ static MouseShortcut mshortcuts[] = {
 	{ TERMMOD,              Button3, previewimage,   {.s = "feh"} },
 	{ TERMMOD,              Button2, showimageinfo,  {},            1 },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
+	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 4} },
+	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 4} },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
@@ -233,8 +235,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i =  8} },
+	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i =  8} },
 	{ TERMMOD,              XK_F1,          togglegrdebug,  {.i =  0} },
 	{ TERMMOD,              XK_F6,          dumpgrstate,    {.i =  0} },
 	{ TERMMOD,              XK_F7,          unloadimages,   {.i =  0} },
