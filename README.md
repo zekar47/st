@@ -1,3 +1,13 @@
+# ZEKAR's st.
+
+## Patches applied
+- kitty graphics protocol
+- scrollback
+- alpha
+- expected anysize
+
+> _The rest of this file is the default st readme_
+
 st - simple terminal
 --------------------
 st is a simple terminal emulator for X which sucks less.
