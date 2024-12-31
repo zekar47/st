@@ -1134,8 +1134,10 @@ xhints(void)
 	sizeh->height_inc = 1;
 	sizeh->width_inc = 1;
 	#else
-	sizeh->height_inc = win.ch;
-	sizeh->width_inc = win.cw;
+	// sizeh->height_inc = win.ch;
+	// sizeh->width_inc = win.cw;
+      	sizeh->height_inc = 1;
+	sizeh->width_inc = 1
 	#endif // ANYSIZE_PATCH
 	sizeh->base_height = 2 * borderpx;
 	sizeh->base_width = 2 * borderpx;
