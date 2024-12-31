@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Monofur Nerd Font:pixelsize=18:style=bold:antialias=true:autohint=true";
+static int borderpx = 25;
 
 /* How to align the content in the window when the size of the terminal
  * doesn't perfectly match the size of the window. The values are percentages.
