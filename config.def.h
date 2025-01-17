@@ -9,8 +9,8 @@ static char *font = "Mononoki Nerd Font:pixelsize=14:antialias=true:autohint=tru
 #if FONT2_PATCH
 /* Spare fonts */
 static char *font2[] = {
-/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
-/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", 
+	"Noto Emoji:pixelsize=11:antialias=true;autohint=true"
 };
 #endif // FONT2_PATCH
 
@@ -18,7 +18,7 @@ static char *font2[] = {
 /*
  * background image
  * expects farbfeld format
- * pseudo transparency fixes coordinates to the screen origin
+ * pseudo transparency fixes coordinates to the slscreen origin
  */
 static const char *bgfile = "/path/to/image.ff";
 static const int pseudotransparency = 0;
